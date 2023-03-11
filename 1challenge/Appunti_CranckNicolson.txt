@@ -1,0 +1,8 @@
+Schema:
+	u{n+1} = u{n} + h/2 + [ f(t{n+1},u{n+1}) + f(t{n},u{n+1}) ]
+
+Condizioni iniziali:
+	----------
+
+Convergenza: 
+	2o ordine
