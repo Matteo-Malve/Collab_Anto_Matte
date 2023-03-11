@@ -1,4 +1,4 @@
-# Install script for directory: /Users/matteom/shared-folder/Collab_Anto_Matte/1challenge
+# Install script for directory: /Users/matteom/shared-folder/Collab_Anto_Matte/1challenge/code_here
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/matteom/shared-folder/Collab_Anto_Matte/1challenge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/matteom/shared-folder/Collab_Anto_Matte/1challenge/code_here/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
