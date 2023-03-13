@@ -1,0 +1,1 @@
+g++ NewtonSolver/*.cpp -c
