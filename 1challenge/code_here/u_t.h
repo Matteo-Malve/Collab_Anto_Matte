@@ -22,6 +22,8 @@ public:
         uh.reserve(N);
     }
     double & operator[](unsigned int i) {return uh[i];}
+
+
     u_t derive(){
         // ???????
     }

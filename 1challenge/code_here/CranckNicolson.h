@@ -14,7 +14,7 @@ using f_t_y = const function<double(double,y_t)>;
 class CranckNicolson {
 public:
     CranckNicolson(f_t_y forzante, double yinit, double Tmax, double hh, unsigned int nn, const double tol, const unsigned int max_iter):
-                    f(forzante), y0(yinit), T(Tmax), h(hh), N(nn), dt(T/n), toll(tol),max_it(max_iter){};
+                    f(forzante), y0(yinit), T(Tmax), h(hh), N(nn), dt(T/N), toll(tol),max_it(max_iter){};
     tuple<Time_Vector,u_t,double> solveCN ();      // [th,uh,residual]
 private:
     // Results:
@@ -34,7 +34,10 @@ private:
         const unsigned int max_it;
         // BC:
         double y0;
-
+// Opz 2
+    double F(double t, double uh, double x){
+        return (x - h/2*(f(t,x)+f(t,uh)) - uh);
+    };
 };
 
 
