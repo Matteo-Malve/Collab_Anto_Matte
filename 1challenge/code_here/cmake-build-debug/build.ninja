@@ -58,24 +58,6 @@ build CMakeFiles/1challenge.dir/CranckNicolson.cpp.o: CXX_COMPILER__1challenge_D
   OBJECT_DIR = CMakeFiles/1challenge.dir
   OBJECT_FILE_DIR = CMakeFiles/1challenge.dir
 
-build CMakeFiles/1challenge.dir/u_t.cpp.o: CXX_COMPILER__1challenge_Debug /Users/matteom/shared-folder/Collab_Anto_Matte/1challenge/code_here/u_t.cpp || cmake_object_order_depends_target_1challenge
-  DEP_FILE = CMakeFiles/1challenge.dir/u_t.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
-  OBJECT_DIR = CMakeFiles/1challenge.dir
-  OBJECT_FILE_DIR = CMakeFiles/1challenge.dir
-
-build CMakeFiles/1challenge.dir/f_t_y.cpp.o: CXX_COMPILER__1challenge_Debug /Users/matteom/shared-folder/Collab_Anto_Matte/1challenge/code_here/f_t_y.cpp || cmake_object_order_depends_target_1challenge
-  DEP_FILE = CMakeFiles/1challenge.dir/f_t_y.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
-  OBJECT_DIR = CMakeFiles/1challenge.dir
-  OBJECT_FILE_DIR = CMakeFiles/1challenge.dir
-
-build CMakeFiles/1challenge.dir/Time_Vector.cpp.o: CXX_COMPILER__1challenge_Debug /Users/matteom/shared-folder/Collab_Anto_Matte/1challenge/code_here/Time_Vector.cpp || cmake_object_order_depends_target_1challenge
-  DEP_FILE = CMakeFiles/1challenge.dir/Time_Vector.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
-  OBJECT_DIR = CMakeFiles/1challenge.dir
-  OBJECT_FILE_DIR = CMakeFiles/1challenge.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1challenge
@@ -84,7 +66,7 @@ build CMakeFiles/1challenge.dir/Time_Vector.cpp.o: CXX_COMPILER__1challenge_Debu
 #############################################
 # Link the executable 1challenge
 
-build 1challenge: CXX_EXECUTABLE_LINKER__1challenge_Debug CMakeFiles/1challenge.dir/main.cpp.o CMakeFiles/1challenge.dir/CranckNicolson.cpp.o CMakeFiles/1challenge.dir/u_t.cpp.o CMakeFiles/1challenge.dir/f_t_y.cpp.o CMakeFiles/1challenge.dir/Time_Vector.cpp.o
+build 1challenge: CXX_EXECUTABLE_LINKER__1challenge_Debug CMakeFiles/1challenge.dir/main.cpp.o CMakeFiles/1challenge.dir/CranckNicolson.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
   OBJECT_DIR = CMakeFiles/1challenge.dir
   POST_BUILD = :

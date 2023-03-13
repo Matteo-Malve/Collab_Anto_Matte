@@ -3,14 +3,27 @@
 
 #include <vector>
 #include "Time_Vector.h"
+#include "../include/NewtonSolver/Newton.hpp"
 using std::vector;
 
 class u_t {
-public:
+private:
     vector<double> uh;
-    u_t(Time_Vector th){
+    size_t N;
+public:
+    explicit u_t(Time_Vector th){
         uh={};
-        uh.reserve(th.get_size());
+        N=th.get_size();
+        uh.reserve(N);
+    }
+    explicit u_t(size_t n){
+        N=n;
+        uh={};
+        uh.reserve(N);
+    }
+    double & operator[](unsigned int i) {return uh[i];}
+    u_t derive(){
+        // ???????
     }
 };
 

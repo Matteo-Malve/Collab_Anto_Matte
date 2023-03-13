@@ -1,17 +1,20 @@
 #ifndef INC_1CHALLENGE_CRANCKNICOLSON_H
 #define INC_1CHALLENGE_CRANCKNICOLSON_H
 
-#include <functional>
 #include "u_t.h"
-#include "f_t_y.h"
 #include "Time_Vector.h"
 #include <tuple>
 using std::tuple;
+#include <functional>
+using std::function;
+using y_t = const function<double(double)>;
+using f_t_y = const function<double(double,y_t)>;
+#include "../include/NewtonSolver/Newton.hpp"
 
 class CranckNicolson {
 public:
-    CranckNicolson(f_t_y forzante, double Tmax, double hh, unsigned int nn, const double tol, const unsigned int max_iter):
-                    f(forzante), T(Tmax), h(hh), n(nn), dt(T/n), toll(tol),max_it(max_iter){};
+    CranckNicolson(f_t_y forzante, double yinit, double Tmax, double hh, unsigned int nn, const double tol, const unsigned int max_iter):
+                    f(forzante), y0(yinit), T(Tmax), h(hh), N(nn), dt(T/n), toll(tol),max_it(max_iter){};
     tuple<Time_Vector,u_t,double> solveCN ();      // [th,uh,residual]
 private:
     // Results:
@@ -24,11 +27,13 @@ private:
         f_t_y f;
         double T;
         double h;
-        unsigned int n;
+        unsigned int N;
         double dt;
         // Numeric:
         const double toll;
         const unsigned int max_it;
+        // BC:
+        double y0;
 
 };
 
