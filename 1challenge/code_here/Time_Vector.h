@@ -19,6 +19,7 @@ public:
             th[i]=dt*i;
     }
     size_t get_size(){return th.size();}
+    double & operator[](unsigned int i) {return th[i];}
 };
 
 

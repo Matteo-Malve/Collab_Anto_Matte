@@ -21,8 +21,8 @@ public:
         uh={};
         uh.reserve(N);
     }
+    const double & operator[](unsigned int i) const {return uh[i];}
     double & operator[](unsigned int i) {return uh[i];}
-
 
     u_t derive(){
         // ???????
